@@ -1,7 +1,7 @@
 //main
 
 body {
-	background-color: $background;
+	background-color: $beige;
 	margin:0;
 	font-family:arial,tahoma,sans-serif;
 	font-size:12px;
@@ -24,7 +24,7 @@ form {
 
 form label {
 	font-size:14px;
-	color:$primary;
+	color: $dark-primary;
 	cursor:pointer;
 }
 
@@ -54,7 +54,7 @@ form input {
 
 form input[type=text]:focus,
 form input[type="password"]:focus {
-	border-color:cornflowerblue;
+	border-color: $green;
 }
 
 input[type=submit] {
@@ -63,7 +63,7 @@ input[type=submit] {
 	background:url("http://im51.gulfup.com/rkvDJI.jpg") center repeat #1abc9c;
 	background-size:200px;
 	border:none;
-	color: $primary;
+	color: $light-primary;
 	cursor:pointer;
 	display:inline-block;
 	float:right;
@@ -89,13 +89,13 @@ input[type="submit"]:active {
 	float:left;
 	clear:left;
 	display:inline-block;
-	color:cornflowerblue;
+	color: $green;
 	text-decoration:none;
 }
 
 .forgot:hover,
 .register:hover {
-	color:darkgray;
+	color: $green;
 }
 
 .logo {
@@ -105,7 +105,7 @@ input[type="submit"]:active {
 	font-size:60px;
 	font-weight:bold;
 	text-align:center;
-	color: $secondary;
+	color: $green;
 	-webkit-transition:0.2s ease all;
 	   -moz-transition:0.2s ease all;
 	    -ms-transition:0.2s ease all;
@@ -114,5 +114,11 @@ input[type="submit"]:active {
 }
 
 .logo:hover {
-	color:cornflowerblue;
+	color: $green;
 }
+
+a{ 
+	@include link($dark-primary, $light-primary);
+}
+
+
