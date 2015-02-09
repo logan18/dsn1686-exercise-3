@@ -1,15 +1,12 @@
 //main
 
-@import url(http://fonts.googleapis.com/css?family=Lily+Script+One);
-
 body {
+	background-color: $background;
 	margin:0;
 	font-family:arial,tahoma,sans-serif;
 	font-size:12px;
 	font-weight:normal;
-	direction:ltr;	        background:url("http://im51.gulfup.com/rkvDJI.jpg") center repeat white;
-	background-size: cover;
-	background-attachment:fixed;
+	direction:ltr;	        
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
@@ -27,7 +24,7 @@ form {
 
 form label {
 	font-size:14px;
-	color:darkgray;
+	color:$primary;
 	cursor:pointer;
 }
 
@@ -66,7 +63,7 @@ input[type=submit] {
 	background:url("http://im51.gulfup.com/rkvDJI.jpg") center repeat #1abc9c;
 	background-size:200px;
 	border:none;
-	color:white;
+	color: $primary;
 	cursor:pointer;
 	display:inline-block;
 	float:right;
@@ -101,14 +98,14 @@ input[type="submit"]:active {
 	color:darkgray;
 }
 
-#logo {
+.logo {
 	margin:0 auto;
 	width:200px;
 	font-family:'Lily Script One', cursive;
 	font-size:60px;
 	font-weight:bold;
 	text-align:center;
-	color:lightgray;
+	color: $secondary;
 	-webkit-transition:0.2s ease all;
 	   -moz-transition:0.2s ease all;
 	    -ms-transition:0.2s ease all;
@@ -116,6 +113,6 @@ input[type="submit"]:active {
 	        transition:0.2s ease all;
 }
 
-#logo:hover {
+.logo:hover {
 	color:cornflowerblue;
 }
